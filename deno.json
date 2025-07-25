@@ -4,10 +4,12 @@
     "tasks": {
         "dev": "concurrently 'deno task dev:client' 'deno task dev:server'",
         "dev:client": "NODE_ENV=development deno run -A npm:vite dev",
-        "dev:server": {
+        "dev:server": "NODE_ENV=development deno serve -A --watch server/main.ts",
+        "dev:serveronly": {
             "command": "NODE_ENV=development deno serve -A --watch server/main.ts",
             "dependencies": ["build:client"]
         },
+
         "run:server": "NODE_ENV=production deno serve -A server/main.ts",
         "run": {
             "dependencies": ["build:client"],

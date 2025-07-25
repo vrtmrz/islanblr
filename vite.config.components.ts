@@ -4,7 +4,7 @@ import { nodeResolve } from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
 import terser from "@rollup/plugin-terser";
 // import { process } from 'node:process'
-const production = import.meta.env?.MODE !== "production";
+const production = import.meta.env?.MODE === "production";
 
 import { globSync } from "glob";
 const entries = {};

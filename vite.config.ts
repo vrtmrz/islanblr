@@ -27,7 +27,7 @@ files.forEach((file) => {
     entries[path] = fileNormalised;
 });
 
-const production = import.meta.env?.MODE !== "production";
+const production = import.meta.env?.MODE === "production";
 // Show the entries and production mode for debugging purposes
 console.log(`Entries: ${JSON.stringify(entries, null, 2)}`);
 console.log(`Production mode: ${production}`);
