@@ -1,0 +1,9 @@
+_package.json
+node_modules/
+static_app/**
+webcomponents/**
+
+!*/.gitkeep
+!**/.gitkeep
+
+*.timestamp-*

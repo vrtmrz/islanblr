@@ -1,0 +1,14 @@
+.git
+.gitignore
+README.md
+dockerfile
+.dockerignore
+node_modules
+npm-debug.log
+.coverage
+.coverage.*
+static_app/**
+webcomponents/**
+*.timestamp-*
+main.ts
+main_test.ts
