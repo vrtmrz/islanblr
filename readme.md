@@ -16,9 +16,9 @@ a swift start. Even though it is a hotch-potch of various technologies, it is de
 
 ```
 ├── app/                  # HTML files and top-level components, organised according to the structure of the web application.
-│   ├── index.html        # Entry HTML file for the SPA
-│   ├── index.svelte      # Root Svelte component for the SPA
-│   └── sub1/             # Subdirectory for additional HTML files (e.g., sub1/index.html)
+│   ├── index.html        # Entry HTML file for the SPA/MPA
+│   ├── index.svelte      # Root Svelte component for the WebApp
+│   └── sub1/             # Subdirectory for additional level pages/subsystem (e.g., sub1/index.html)
 ├── applib/               # Application as a library (Svelte components)
 │   ├── assets/           # Static assets such as images (e.g., svelte.svg)
 │   ├── components/       # Reusable Svelte components
